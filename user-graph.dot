@@ -55,6 +55,7 @@ digraph {
     "oauth_only?" -> "migrated?";
     "self.new_with_session";
     "managing_own_credentials?" -> "migrated?";
+    "managing_own_credentials?" -> "manual?";
     "password_required?" -> "managing_own_credentials?";
     "teacher_email_required?" -> "teacher?";
     "email_or_hashed_email_required?" -> "teacher?";
@@ -119,6 +120,7 @@ digraph {
     "can_enable_ai_tutor?";
     "can_view_student_ai_chat_messages?";
     "teacher_can_access_ai_chat?" -> "teacher?";
+    "teacher_can_access_ai_chat?" -> "oauth?";
     "student_can_access_ai_chat?";
     "has_aichat_access?";
     "has_ai_tutor_access?";
